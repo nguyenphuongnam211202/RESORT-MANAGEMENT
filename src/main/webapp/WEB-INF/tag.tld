@@ -1,0 +1,65 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Test TLD</short-name>
+    <uri>customTag</uri>
+
+    <tag>
+        <name>paging</name>
+        <tag-class>m3.furama.util.tag.PagingTag</tag-class>
+        <attribute>
+            <name>params</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>search</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>delete</name>
+        <tag-class>m3.furama.util.tag.DeleteTag</tag-class>
+    </tag>
+
+    <tag>
+        <name>addEdit</name>
+        <tag-class>m3.furama.util.tag.AddEditTag</tag-class>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>exclude</name>
+        </attribute>
+        <attribute>
+            <name>radio</name>
+        </attribute>
+        <attribute>
+            <name>checkbox</name>
+        </attribute>
+        <attribute>
+            <name>select</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>table</name>
+        <tag-class>m3.furama.util.tag.TableTag</tag-class>
+        <attribute>
+            <name>header</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>column</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>result</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
